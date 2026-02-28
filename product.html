@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Oils | Neejhar Milap</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 50px 10%; }
+        .product-card { background: var(--dark-gray); padding: 40px 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.4s, border-color 0.4s; position: relative; }
+        .product-card:hover { transform: translateY(-10px); border-color: var(--gold); }
+        .product-card::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 2px; background: var(--gold); }
+        .product-icon { font-size: 40px; color: var(--gold); margin-bottom: 20px; }
+        .product-title { font-size: 1.5rem; margin-bottom: 15px; }
+        .product-desc { color: #aaa; font-size: 14px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">NEEJHAR MILAP</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Our Oils</a>
+            <a href="heritage.html">The Heritage</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1 class="page-title">The Pure Collection</h1>
+        <p class="page-desc">Extracted using the age-old Kacchi Ghani method to retain natural aroma, flavor, and vital nutrients.</p>
+    </header>
+
+    <section class="grid">
+        <div class="product-card">
+            <div class="product-icon">💧</div>
+            <h3 class="product-title">Premium Mustard Oil</h3>
+            <p class="product-desc">Our signature Kacchi Ghani Sarson Ka Tel. Pungent, rich, and untouched by chemicals. Available in tins and bottles.</p>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">🥜</div>
+            <h3 class="product-title">Groundnut & Sesame</h3>
+            <p class="product-desc">Premium Mungfali and Til oils, cold-pressed to preserve heart-healthy fats and deep, authentic flavors.</p>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">🥥</div>
+            <h3 class="product-title">Coconut & Almond</h3>
+            <p class="product-desc">Luxurious Nariyal and Badam oils. Extracted slowly to ensure perfection for culinary excellence and holistic wellness.</p>
+        </div>
+        <div class="product-card">
+            <div class="product-icon">🌶️</div>
+            <h3 class="product-title">Pure Spices & Butters</h3>
+            <p class="product-desc">Authentic Lal Mirch, Haldi, Dhaniya, alongside our freshly crafted, preservative-free Peanut and Almond butters.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo" style="font-size: 18px;">NEEJHAR MILAP</div>
+        <p style="color: #555; font-size: 12px;">© 2026 Neejhar Milap Oil Mills. All Rights Reserved.</p>
+        <div class="gazirex-badge">
+            <svg class="shield-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            Gazirex Certified <span>Secure Storefront</span>
+        </div>
+    </footer>
+</body>
+</html>

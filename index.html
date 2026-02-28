@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neejhar Milap Oil Mills | Premium Kacchi Ghani</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Homepage Specific Styles */
+        #home {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), url('https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?q=80&w=2000&auto=format&fit=crop') center/cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .hero-title { font-size: 4.5rem; line-height: 1.1; margin-bottom: 30px; }
+        .hero-subtitle { color: var(--gold); letter-spacing: 4px; font-size: 14px; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            color: var(--gold);
+            font-size: 24px;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-15px) translateX(-50%); }
+            60% { transform: translateY(-7px) translateX(-50%); }
+        }
+
+        /* Generic Section Styling */
+        .home-section { padding: 100px 10%; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-title { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+        .section-subtitle { color: #888; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+
+        /* Legacy Split Section */
+        .legacy-split {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            background: var(--dark-gray);
+            padding: 80px 10%;
+            border-top: 1px solid rgba(212,175,55,0.1);
+            border-bottom: 1px solid rgba(212,175,55,0.1);
+        }
+        .legacy-img {
+            flex: 1;
+            height: 450px;
+            background: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1000&auto=format&fit=crop') center/cover;
+            border: 1px solid var(--gold);
+            box-shadow: 15px 15px 0px rgba(212, 175, 55, 0.1);
+        }
+        .legacy-text { flex: 1; }
+        .legacy-text h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; }
+        .legacy-text p { color: #ccc; line-height: 1.8; margin-bottom: 30px; }
+
+        /* Featured Grid */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .feature-card {
+            background: var(--black);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.4s;
+        }
+        .feature-card:hover { border-color: var(--gold); transform: translateY(-5px); background: #111; }
+        .feature-icon { font-size: 40px; margin-bottom: 20px; }
+        .feature-card h3 { color: var(--white); margin-bottom: 15px; font-size: 1.4rem; }
+        .feature-card p { color: #888; font-size: 0.9rem; line-height: 1.6; }
+
+        /* Trust Banner */
+        .trust-banner {
+            background: linear-gradient(rgba(212, 175, 55, 0.05), rgba(10, 10, 10, 0.9)), url('https://images.unsplash.com/photo-1605051410111-209297800c73?q=80&w=2000&auto=format&fit=crop') center/cover;
+            background-attachment: fixed;
+            padding: 100px 10%;
+            text-align: center;
+            border-top: 1px solid var(--gold);
+        }
+        .trust-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .stat-item h4 { font-size: 3rem; color: var(--gold); font-family: 'Playfair Display', serif; }
+        .stat-item p { color: var(--white); text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-top: 10px; }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">NEEJHAR MILAP</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Our Oils</a>
+            <a href="heritage.html">The Heritage</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <span class="hero-subtitle">100% Pure • Gokulpura, Jaipur</span>
+            <h1 class="hero-title">Liquid Gold, <br>Cold-Pressed Perfection.</h1>
+            <p style="margin-bottom: 40px; color: #ccc; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;">Experience the authentic taste and unparalleled health benefits of traditional Kacchi Ghani oils, crafted with uncompromising purity for the modern Indian kitchen.</p>
+            <a href="products.html" class="gold-btn">Explore The Collection</a>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </header>
+
+    <section class="legacy-split">
+        <div class="legacy-img"></div>
+        <div class="legacy-text">
+            <h2>The Kacchi Ghani Difference</h2>
+            <p>Unlike industrial refined oils that use high heat and chemicals, Neejhar Milap preserves the soul of the seed. Our traditional wooden presses operate at room temperature, ensuring every drop retains its natural antioxidants, robust aroma, and deep nutritional profile.</p>
+            <p>From the heart of Jaipur to your family's table, we guarantee 100% adulteration-free purity.</p>
+            <a href="heritage.html" class="gold-btn">Read Our Story</a>
+        </div>
+    </section>
+
+    <section class="home-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Signature Oils</h2>
+            <p class="section-subtitle">A glimpse into our premium range of cold-pressed oils and authentic spices.</p>
+        </div>
+        
+        <div class="featured-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>Mustard Oil (Sarson)</h3>
+                <p>Our flagship Kacchi Ghani oil. Highly pungent, rich in flavor, and perfect for authentic traditional cooking.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥜</div>
+                <h3>Groundnut Oil</h3>
+                <p>Sweet, nutty, and loaded with heart-healthy fats. The ideal premium choice for deep frying and daily meals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌶️</div>
+                <h3>Pure Ground Spices</h3>
+                <p>Freshly ground Lal Mirch, Haldi, and Dhaniya, processed without preservatives to deliver maximum color and taste.</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="products.html" class="gold-btn" style="border-color: #555; color: #fff;">View Complete Catalog</a>
+        </div>
+    </section>
+
+    <section class="trust-banner">
+        <h2 class="section-title" style="color: var(--white);">Uncompromising Standards</h2>
+        <p class="section-subtitle" style="color: #ccc;">We serve households, luxury hotels, and bulk exporters who demand nothing but the absolute best.</p>
+        
+        <div class="trust-stats">
+            <div class="stat-item">
+                <h4>100%</h4>
+                <p>Chemical Free</p>
+            </div>
+            <div class="stat-item">
+                <h4>0°C</h4>
+                <p>Heat Added</p>
+            </div>
+            <div class="stat-item">
+                <h4>#1</h4>
+                <p>Purity Grade</p>
+            </div>
+            <div class="stat-item">
+                <h4>B2B</h4>
+                <p>Wholesale Ready</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section" style="text-align: center; padding-bottom: 50px;">
+        <h2 class="section-title">Partner With Purity</h2>
+        <p class="section-subtitle" style="margin-bottom: 30px;">Whether you are stocking your home kitchen or sourcing for a large-scale commercial operation, Neejhar Milap is your trusted partner.</p>
+        <a href="contact.html" class="gold-btn">Contact For Bulk Orders</a>
+    </section>
+
+    <footer>
+        <div class="logo" style="font-size: 18px;">NEEJHAR MILAP</div>
+        <p style="color: #555; font-size: 12px;">© 2026 Neejhar Milap Oil Mills. All Rights Reserved.</p>
+        <div class="gazirex-badge">
+            <svg class="shield-icon" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            Gazirex Certified <span>Secure Storefront</span>
+        </div>
+    </footer>
+</body>
+</html>
